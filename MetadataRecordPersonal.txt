@@ -1,0 +1,59 @@
+// Abstract base class Personal metadata records 
+package MetadataRecord;
+public abstract class MetadataRecordPersonal  
+{ 
+private String[] FamilyName 			//Family or Last Name
+private String[] GivenName 				//Given or First Name
+private String[] AdditionalName 		//Middle Name
+private Int 	 BirthDate 				// Birth Date
+private String[] BirthPlace 			//Place Born
+private Int 	 DeathDate 				//Death Date
+private String[] DeathPlace 			//Place Died
+private String[] HonorificPrefix 		//An honorific prefix preceding the name such as Dr/Mrs/Mr.
+private String[] HonorificSuffix 		//An honorific suffix succceding the name such as M.D. /PhD/MSCSW.
+private String[] Gender 				//Gender 
+private String[] JobTitle 				//Job Title or Profession (Examples: Guitarist, Author, CEO, Principal Investigator)
+private String[] Nationality 			//Nationality
+private String[] MemberOf 				//An Organization (or Program) to which this person belongs. (Examples: University of Michigan, Trans-Siberian Orchestra, Detroit Lions)
+private String[] PerformerIn 			//An event this person performed or participated in. (Examples: Woodstock, Great Depression, World War II)
+   
+   
+   // Constructor 
+   public MetadataRecordPersonal( String first, String last ) 
+   { 
+      firstName = first; 
+      lastName = last; 
+   } 
+    
+   // Return the first name 
+   public String getFirstName()  
+   {  
+      return firstName;  
+   } 
+
+   // Return the last name 
+   public String getLastName()  
+   {  
+      return lastName;  
+   } 
+     public void setLastName(String last)  
+   {  
+       lastName = last;          
+   } 
+       public void setFirstName(String first)  
+   {  
+       firstName = first;  
+   } 
+
+   // Object status returned as String object 
+   public String toString() 
+   {  
+      return firstName + ' ' + lastName;  
+   } 
+
+   // Abstract method that must be implemented for each  
+   // derived class of Employee from which objects  
+   // are instantiated. 
+   public abstract double earnings();  
+
+} 

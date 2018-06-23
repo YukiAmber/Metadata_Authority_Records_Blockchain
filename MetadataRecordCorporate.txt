@@ -1,0 +1,66 @@
+// Abstract base class for coperate metadata records 
+package MetadataRecord;
+public abstract class MetadataRecordCorporate  
+{ 
+private String[] LegalName; 				//Official Name of the Organization
+private Int 	 FoundingDate; 			//Founding Date
+private String[] FoundingLocation; 		//Founding Location
+private String[] Founder; 				//Person who founded the organization.
+private Int 	 DissolutionDate; 		//Dissolved Date
+private String[] Location; 				//Location
+private String[] Brand; 					//Associated Brand
+private String[] SubOrganization; 		//Department or SubUnit (Leave blank if not specified.)
+private String[] ParentOrganization; 	//Parent Organization (Leave blank if this organization is at the highest level.)
+private String[] Event; 					//Event associated with this organization. (Examples: Olympics, Orientation Week, Dental Clinic)
+private Int 	 TelephoneNumber;		//Telephone Number
+   
+   // Constructor 
+   public MetadataRecordCorporate(String[] LName, Int FDate,String[] FLocation,String[] Founder, Int DisDate,String[] Location,String[] Brand,String[] SubOrg,String[] ParOrg,String[] Event, Int Telephone) 
+   { 
+	  
+	    LegalName = first;
+		FoundingDate = first;
+		FoundingLocation = first;
+		Founder = first;
+		DissolutionDate = first;
+		Location = first;
+		Brand = first;
+		SubOrganization = first;
+		ParentOrganization = first;
+		Event = first;
+		TelephoneNumber = first;
+	 	  
+   } 
+    
+   // Return the first name 
+   public String getFirstName()  
+   {  
+      return firstName;  
+   } 
+
+   // Return the last name 
+   public String getLastName()  
+   {  
+      return lastName;  
+   } 
+     public void setLastName(String last)  
+   {  
+       lastName = last;          
+   } 
+       public void setFirstName(String first)  
+   {  
+       firstName = first;  
+   } 
+
+   // Object status returned as String object 
+   public String toString() 
+   {  
+      return firstName + ' ' + lastName;  
+   } 
+
+   // Abstract method that must be implemented for each  
+   // derived class of Employee from which objects  
+   // are instantiated. 
+   public abstract double earnings();  
+
+} 

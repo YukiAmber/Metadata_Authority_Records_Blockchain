@@ -1,0 +1,64 @@
+java new class
+define an object;
+
+public class block 
+{
+
+private int PastHash;
+private String[] Transaction;
+
+private int BloackHash;
+
+public Block{ int PastHash, String[] Transaction
+{
+this.PastHash = PastHash;
+this.Transaction = Transaction;
+
+Object[] contens = {Arrays.hashCode(transaction), getPastHash} ;
+this.blockhash = Arrays.hashCode(contens);
+}
+
+public int getPastHash()
+{
+return PastHash;
+}
+
+public int getTransaction()
+{
+return Transaction;
+}
+
+
+public int getBlockHash()
+{
+return BlockHash;
+}
+}
+
+
+public class Main 
+{
+
+ArrayList<Block> blockchain = new ArrayList<>();
+
+public statis Void main(String[] args
+{
+/* fake; start record here*/
+String [] CreateCoreRecord = {"Core record start here"};
+Block CoreRecord = new Block(PastHash 0, CoreRecord);
+
+String [] InputRecordChanges = {"Changes here"};
+Block RecordChanges = new Block(CoreBlock.getBlockHash(), InputRecordChanges);
+
+String [] InputRecordChanges = {"Changes here"};
+Block RecordChanges2 = new Block(RecordChanges.getBlockHash(),InputRecordChanges);
+
+System.out.println("Hash of CoreRecord");
+System.out.println(CoreBlock.getBlockHash());
+System.out.println("Hash of RecordChanges");
+System.out.println(RecordChanges.getBlockHash());
+
+}
+
+}
+}

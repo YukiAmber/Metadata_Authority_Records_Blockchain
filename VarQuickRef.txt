@@ -1,0 +1,26 @@
+String[] FamilyName 			//Family or Last Name
+String[] GivenName 				//Given or First Name
+String[] AdditionalName 		//Middle Name
+Int 	 BirthDate 				// Birth Date
+String[] BirthPlace 			//Place Born
+Int 	 DeathDate 				//Death Date
+String[] DeathPlace 			//Place Died
+String[] HonorificPrefix 		//An honorific prefix preceding the name such as Dr/Mrs/Mr.
+String[] HonorificSuffix 		//An honorific suffix succceding the name such as M.D. /PhD/MSCSW.
+String[] Gender 				//Gender 
+String[] JobTitle 				//Job Title or Profession (Examples: Guitarist, Author, CEO, Principal Investigator)
+String[] Nationality 			//Nationality
+String[] MemberOf 				//An Organization (or Program) to which this person belongs. (Examples: University of Michigan, Trans-Siberian Orchestra, Detroit Lions)
+String[] PerformerIn 			//An event this person performed or participated in. (Examples: Woodstock, Great Depression, World War II)
+
+String[] LegalName 				//Official Name of the Organization
+Int 	 FoundingDate 			//Founding Date
+String[] FoundingLocation 		//Founding Location
+String[] Founder 				//Person who founded the organization.
+Int 	 DissolutionDate 		//Dissolved Date
+String[] Location 				//Location
+String[] Brand 					//Associated Brand
+String[] SubOrganization 		//Department or SubUnit (Leave blank if not specified.)
+String[] ParentOrganization 	//Parent Organization (Leave blank if this organization is at the highest level.)
+String[] Event 					//Event associated with this organization. (Examples: Olympics, Orientation Week, Dental Clinic)
+Int 	 TelephoneNumber		//Telephone Number

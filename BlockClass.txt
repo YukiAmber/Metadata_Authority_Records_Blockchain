@@ -1,0 +1,41 @@
+import java.lang.reflect.Array;
+import java.text.SimpleDataFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
+//Defining the Block Class
+
+public class block 
+{
+
+private int PastHash;
+private String[] RecordChange;
+
+private int BlockHash;
+
+public Block(int PastHash, String[] RecordChange)
+{
+	this.PastHash = PastHash;
+	this.RecordChange = RecordChange;
+
+	Object[] BlockContents = {Arrays.hashCode(RecordChange), getPastHash) ;
+	this.BlockHash = Arrays.hashCode(BlockContents);
+}
+
+public int getPastHash()
+{
+	return PastHash;
+}
+
+public String getRecordChange()
+{
+	return RecordChange;
+}
+
+public int getBlockHash()
+{
+	return BlockHash;
+}
+}

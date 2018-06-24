@@ -1,0 +1,34 @@
+import java.lang.reflect.Array;
+import java.text.SimpleDataFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
+
+public class Main 
+{
+
+ArrayList<Block> blockchain = new ArrayList<>();
+
+public statis void main(String[] args)
+{
+/* fake; start record here*/
+String[] CreateCoreRecord = {"Core record start here"};
+Block CoreRecord = new Block(PastHash 0, CoreRecord);
+
+String[] InputRecordChanges = {"Changes here"};
+Block RecordChanges = new Block(CoreBlock.getBlockHash(), InputRecordChanges);
+
+String[] InputRecordChanges = {"Changes here"};
+Block RecordChanges2 = new Block(RecordChanges.getBlockHash(),InputRecordChanges);
+
+System.out.println("Hash of CoreRecord");
+System.out.println(CoreBlock.getBlockHash());
+System.out.println("Hash of RecordChanges");
+System.out.println(RecordChanges.getBlockHash());
+
+}
+
+}
+}

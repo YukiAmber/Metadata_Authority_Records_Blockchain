@@ -1,3 +1,11 @@
+import java.lang.reflect.Array;
+import java.text.SimpleDataFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
+
 // Abstract base class Personal metadata records 
 package MetadataRecord;
 public abstract class MetadataRecordPersonal  
@@ -19,41 +27,111 @@ private String[] PerformerIn 			//An event this person performed or participated
    
    
    // Constructor 
-   public MetadataRecordPersonal( String first, String last ) 
+   public MetadataRecordPersonal(String[] LastName, String[] FirstName, String[] MiddleName, Int BDate, String[] BPlace, Int DDate, String[] DPlace, String[] HonPrefix, String[] HonSuffix, String[] Gender, String[] Job, String[] Nationality, String[] Member, String[] PerformerIn 
    { 
-      firstName = first; 
-      lastName = last; 
+		FamilyName = LastName;
+		GivenName = FirstName;
+		AdditionalName = MiddleName;
+		BirthDate = BDate;
+		BirthPlace = BPlace;
+		DeathDate = DDate;
+		DeathPlace = DPlace;
+		HonorificPrefix = HonPrefix;
+		HonorificSuffix = HonSuffix;
+		Gender = Gender;
+		JobTitle = Job;
+		Nationality = Nationality;
+		Member = Member;
+		PerformerIn = PerformerIn;
    } 
     
-   // Return the first name 
-   public String getFirstName()  
-   {  
-      return firstName;  
-   } 
+   //Return intializers
+   public String getFamilyName()  
+   {  return FamilyName;  } 
+   
+   public String getGivenName()  
+   {  return GivenName;  } 
+   
+   public String getAdditionalName()  
+   {   return AdditionalName;  } 
+   
+   public Int getBirthDate()  
+   {    return BirthDate;   } 
+   
+   public String getBirthPlace()  
+   {  return BirthPlace;  } 
+   
+   public Int getDeathDate()  
+   {  return DeathDate; } 
+   
+   public String getDeathPlace()  
+   {  return DeathPlace;  } 
+   
+   public String getHonorificPrefix()  
+   {  return HonorificPrefix;   } 
+   
+   public String getHonorificSuffix()  
+   {  return HonorificSuffix;  } 
+   
+   public String getGender()  
+   {   return Gender;   } 
+   
+   public String getJobTitle()  
+   {   return JobTitle; } 
 
-   // Return the last name 
-   public String getLastName()  
-   {  
-      return lastName;  
-   } 
-     public void setLastName(String last)  
-   {  
-       lastName = last;          
-   } 
-       public void setFirstName(String first)  
-   {  
-       firstName = first;  
-   } 
+   public String getNationality()  
+   {  return Nationality;  } 
+   
+   public String getMember()  
+   {   return Member;   } 
+   
+   public Int getPerformerIn()  
+   {   return PerformerIn; }  
+      
+   
+//Set Statements   
+   public void setFamilyName(String LastName)  
+   {    FamilyName = LastName;} 
+   
+    public void setGivenName(Int FDate)  
+   {   GivenName = FirstName;}
+   
+   public void setAdditionalName(String MiddleName)  
+   {    AdditionalName = MiddleName;} 
+   
+   public void setBirthDate(String BDate)  
+   {   BirthDate = BDate;} 
+   
+   public void setBirthPlace(String BPlace)  
+   {    BirthPlace = BPlace;} 
+   
+   public void setDeathDate(DDate)  
+   {   DeathDate = DDate;} 
+   
+   public void setDeathPlace(String DPlace)  
+   {    DeathPlace = DPlace;} 
+   
+   public void setHonorificPrefix(String HonPrefix)  
+   {   HonorificPrefix = HonPrefix;}
+   
+   public void setHonorificSuffix(String HonSuffix)  
+   {    HonorificSuffix = HonSuffix;} 
+   
+   public void setGender(String Gender)  
+   {   Gender = Gender;} 
+   
+   public void setJobTitle(String Job)  
+   {    JobTitle = Job;} 
+   
+   ublic void setNationality(String Nationality)  
+   {    Nationality = Nationality;} 
+   
+   public void setMember(String Member)  
+   {   Member = Member;} 
+   
+   public void setPerformerIn(String PerformerIn)  
+   {    PerformerIn = PerformerIn;}
+} 
 
-   // Object status returned as String object 
-   public String toString() 
-   {  
-      return firstName + ' ' + lastName;  
-   } 
-
-   // Abstract method that must be implemented for each  
-   // derived class of Employee from which objects  
-   // are instantiated. 
-   public abstract double earnings();  
 
 } 

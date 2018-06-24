@@ -1,3 +1,10 @@
+import java.lang.reflect.Array;
+import java.text.SimpleDataFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
 // Abstract base class for coperate metadata records 
 package MetadataRecord;
 public abstract class MetadataRecordCorporate  
@@ -15,52 +22,91 @@ private String[] Event; 					//Event associated with this organization. (Example
 private Int 	 TelephoneNumber;		//Telephone Number
    
    // Constructor 
-   public MetadataRecordCorporate(String[] LName, Int FDate,String[] FLocation,String[] Founder, Int DisDate,String[] Location,String[] Brand,String[] SubOrg,String[] ParOrg,String[] Event, Int Telephone) 
+   public MetadataRecordCorporate(String[] LegName, Int FDate, String[] FLocation, String[] Founder, Int DisDate, String[] Location, String[] Brand, String[] SubOrg, String[] ParOrg, String[] Event, Int Telephone) 
    { 
 	  
-	    LegalName = first;
-		FoundingDate = first;
-		FoundingLocation = first;
-		Founder = first;
-		DissolutionDate = first;
-		Location = first;
-		Brand = first;
-		SubOrganization = first;
-		ParentOrganization = first;
-		Event = first;
-		TelephoneNumber = first;
+	    LegalName = LegName;
+		FoundingDate = FDate;
+		FoundingLocation = FLocation;
+		Founder = Founder;
+		DissolutionDate = DisDate;
+		Location = Location;
+		Brand = Brand;
+		SubOrganization = SubOrg;
+		ParentOrganization = ParOrg;
+		Event = Event;
+		TelephoneNumber = Telephone;
 	 	  
    } 
     
-   // Return the first name 
-   public String getFirstName()  
-   {  
-      return firstName;  
-   } 
+//Return intializers
+   public String getLegalName()  
+   {  return LegalName;  } 
+   
+   public Int getFoundingDate()  
+   {  return FoundingDate;  } 
+   
+   public String getFoundingLocation()  
+   {   return FoundingLocation;  } 
+   
+   public String getFounder()  
+   {    return Founder;   } 
+   
+   public Int getDissolutionDate()  
+   {  return DissolutionDate;  } 
+   
+   public String getLocation()  
+   {  return Location; } 
+   
+   public String getBrand()  
+   {  return Brand;  } 
+   
+   public String getSubOrganization()  
+   {  return SubOrganization;   } 
+   
+   public String getParentOrganization()  
+   {  return ParentOrganization;  } 
+   
+   public String getEvent()  
+   {   return Event;   } 
+   
+   public Int getTelephoneNumber()  
+   {   return TelephoneNumber; }  
+   
+//Set Statements   
+   public void setLegalName(String LegName)  
+   {    LegalName = LegName;} 
+   
+    public void setFoundingDate(Int FDate)  
+   {   FoundingDate = FDate;}
+   
+   public void setFoundingLocation(String FLocation)  
+   {    FoundingLocation = FLocation;} 
+   
+   public void setFounder(String Founder)  
+   {   Founder = Founder;} 
+   
+   public void setDissolutionDate(String DisDate)  
+   {    DissolutionDate = DisDate;} 
+   
+   public void setLocation(String Location)  
+   {   Location = Location;} 
+   
+   public void setBrand(String Brand)  
+   {    Brand = Brand;} 
+   
+   public void setSubOrganization(String SubOrg)  
+   {   SubOrganization = SubOrg;}
+   
+   public void setParentOrganization(String ParOrg)  
+   {    ParentOrganization = ParOrg;} 
+   
+   public void setEvent(String Event)  
+   {   Event = Event;} 
+   
+   public void setTelephoneNumber(String Telephone)  
+   {    TelephoneNumber = Telephone;} 
 
-   // Return the last name 
-   public String getLastName()  
-   {  
-      return lastName;  
-   } 
-     public void setLastName(String last)  
-   {  
-       lastName = last;          
-   } 
-       public void setFirstName(String first)  
-   {  
-       firstName = first;  
-   } 
 
-   // Object status returned as String object 
-   public String toString() 
-   {  
-      return firstName + ' ' + lastName;  
-   } 
-
-   // Abstract method that must be implemented for each  
-   // derived class of Employee from which objects  
-   // are instantiated. 
-   public abstract double earnings();  
 
 } 
